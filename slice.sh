@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ $1x == x ]; then
-    echo "Usage: slice <image-file-name>"
+    echo "Usage: slice.sh <image-file-name>"
     exit -1
 fi
 
@@ -34,4 +34,3 @@ for ((i = 0; i < 23; i++)); do
         break
     fi
 done
-# for ((i = 0; i < 9; i++)); do let j=$i*300; let k=$i+1; convert -crop 300x2300+$j+90 ifs.jpg ifs-0$k.jpg; done
